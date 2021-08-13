@@ -234,7 +234,7 @@ function getArtistByIndex(array, index) {
   return `the artist at index ${array[index]["id"]} is ${array[index]["name"]}`;
 }
 
-console.log(getArtistByIndex(artists, 0));
+// console.log(getArtistByIndex(artists, 0));
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -247,15 +247,18 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 // Hint - Look up the .split() method
 
 function get20s(array) {
-  // const newArray = [];
-  // for (let i = 0; i < array.length; i++){
-    
-  // }
-
-
+  let newArray = [];
+  const namesArray = [];
+  for (let i = 0; i < array.length; i++){
+    let newArray = array[i]["years"].split(" - ");
+    if (newArray[0] >= 1900 && newArray[1] <= 1999){
+      namesArray.push(array[i]["name"]);
+    }
  }
+ return namesArray
+}
 
-// console.log(get20s(artists));
+console.log(get20s(artists));
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -272,7 +275,6 @@ function removeArtist(array, index) {
   return array.length;
 }
 
-console.log()
 
 
 
@@ -305,7 +307,7 @@ function addArtist(array) {
   return array;
 }
 
-console.log(addArtist(artists));
+// console.log(addArtist(artists));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use lotsOfArt to do the following: 
@@ -324,7 +326,7 @@ function lotsOfArt(array) {
   return artistList;
 }
 
-console.log(lotsOfArt(artists));
+// console.log(lotsOfArt(artists));
 
 /* ***** END OF TASKS ***** */
 

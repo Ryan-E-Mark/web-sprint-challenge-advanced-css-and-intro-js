@@ -23,10 +23,28 @@ Commit your code regularly and meaningfully.
 Please answer the following questions below, you may edit the readme file to include your answers below the question.
 
 1. How would you describe acessibility on the web to someone new to programming?
+
+    Accessibility on the web is coding such that your product is considerate to those with disabilities. For instance, using semantic html so that screen readers can effectively interpret a website for a visually impaired person, or coding with scalable units so that if someone may need to increase the font size to read your webpage they are able to do so. 
+
 2. Talk about 3 different things you can do to ensure your website is accessible. 
+
+    Three things you can do to ensure your website is accessible is 
+        1. To include the viewport meta tag in the head of the htlm, this allows for media queries to be applied and utilized.
+        2. Include media queries in the CSS styling as well as scalable units so that your website adapts to work with different screen sizes and devices that may be accessing your page.
+        3. Writing semantic HTML so that it can be read by screen readers. 
+
 3. How would you explain the concept of a variable to someone new to programming?
+
+    A variable is a way to store data. We can assign numbers or words or groups of data to a single variable, so that when we want to manipulate that data we can do so by manipulating one variable rather than each piece of data individually.
+
 4. What is the purpose of using functions in code?
+
+    The purpose of using functions in code is to prevent having to repeat yourself. Creating a function that can be passed a variety of arguments allows for less code to be written and a reusable piece of code that can work for multiple applications. 
+
 5. How do you access a key inside of an object inside of an array?
+
+    You access a key inside of an object inside of an array by calling: arrayName[indexOfSaidKey].keyName
+
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
